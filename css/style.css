@@ -1,0 +1,21 @@
+body {
+   
+    background: linear-gradient(to right, #00f, #800080);
+    height: 100vh;
+    margin: 0;
+  }
+  
+/* .form-control{
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.466), #8000804b);
+    height: 100vh;
+    margin: 0;
+}   */
+
+.img-card{
+    aspect-ratio: 16/9;
+    object-fit: contain;
+}
+.product{
+    background: linear-gradient(to right, rgba(0, 0, 255, 0.466), #8000804b);
+   
+}

@@ -1,0 +1,114 @@
+<html>
+    <head>
+        <title>crud </title>
+        <meta content="wasf el 7aga" name="descriotion" />
+        <meta name="keywords" content>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+         -->
+    <link rel="stylesheet" href="css/all.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/media.css">
+    </head>
+   <body>
+    <!-- <div id="masseg"></div>
+    <input type="text" name="" id="firstname">
+    <label for="firstname"></label>
+
+    <input type="text" name="" id="lastname">
+    <label for="lastname"></label>
+    <button onclick="sayhello()">submint</button>
+     -->
+     
+
+
+    <div class="text-center"><h1>Hello customer</h1></div>
+
+     <div class="form-inputs container pt-5">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control " id="productName" placeholder="Product Name" oninput="validatForm(this)">
+            <span class="text-danger d-none">proudect name must start widthcapital letter and length bettwen 3 to15 </span>
+            <label for="productName">Product Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control " id="productPrice" placeholder="Product Price"oninput="validatForm(this)">
+            <span class="text-danger d-none">proudect name must start widthcapital letter and length bettwen 3 to15 </span>
+            
+            <label for="productPrice">Product Price</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input list="categories" type="text" class="form-control " id="productCategory"
+                placeholder="Product Category" oninput="validatForm(this)">
+                <span class="text-danger d-none">proudect name must start widthcapital letter and length bettwen 3 to15 </span>
+            
+                <label for="productCategory">Product Category</label>
+
+            <datalist id="categories">
+                <option value="Electronics">
+                <option value="tv">
+                <option value="Phone">
+            </datalist>
+
+        </div>
+
+        <div class="form-floating mb-3">
+            <input type="file" accept="image/*" class="form-control " id="productimge" placeholder="Product imge" oninput="validatForm(this)">
+            
+            <label for="productimge">Product imge</label>
+        </div>
+        <div class="form-floating mb-3">
+            <textarea class="form-control " id="productdescription" placeholder="Product Description" oninput="validatForm(this)"></textarea>
+            <span class="text-danger d-none">proudect name must start widthcapital letter and length bettwen 3 to15 </span>
+            
+            <label for="productdescription">product description</label>
+        </div>
+
+        <button class="btn btn-primary" id="addbtn" onclick="addProduct()">ADD Product</button>
+        <button class="btn btn-success d-none" id="updatebtn" onclick="updateProduct()">update Product</button>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    
+    <section class="py-5 ">
+        <div class="container">
+            
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="productsearch" placeholder="Product search" oninput="searchProductByTitle(this.value)">
+                    <label for="productsearch">productsearch</label>
+                </div>
+
+
+            
+        </div>
+    </section>
+
+
+
+
+
+
+        <section class="py-5">
+        <div class="container">
+            <div class="row" id="prouductrow">
+                
+            </div>
+        </div>
+
+        </section>
+        <script src="js/bootstrap.bundle.min.js"></script> 
+    <script src="js/main.js"></script>
+    </body>    
+</html>
